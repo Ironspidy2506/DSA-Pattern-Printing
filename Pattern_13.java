@@ -1,18 +1,20 @@
 import java.util.*;
 
-// Pattern 6
-// 12345
-// 1234
-// 123
-// 12
-// 1
+// Pattern 13
+// A
+// B B
+// C C C
+// D D D D
+// E E E E E
 
-public class Pattern_6 {
+public class Pattern_13 {
     private static void printPattern(int n) {
+        char ch = 'A';
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i + 1; j++) {
-                System.out.print(j);
+            for (int j = 1; j <= i; j++) {
+                System.out.print(ch + " ");
             }
+            ch++;
             System.out.println();
         }
     }
